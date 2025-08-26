@@ -15,4 +15,4 @@ from math import sin, pi
 print("Reynolds number is", (0.875*9)/(0.0015))
 print("Wavelength is", (2*0.029*sin(35*pi/180))/(1), "nm")
 print("Production rate is", (100)/(1 + 0.8*2*10)**(1/0.8), "barrels/day")
-print("Change in velocity is", (2029)*math.log(11000/8300), "m/s")
+print("Change of velocity is", (2029)*math.log(11000/8300), "m/s")

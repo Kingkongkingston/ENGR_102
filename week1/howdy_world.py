@@ -3,7 +3,7 @@
 # "I have not given or received any unauthorized aid on this assignment."
 #
 # Name: Kingston Ronnie Alexander
-# Section: 506
+# Section: 509
 # Assignment: Lab 1.11 - Howdy World
 # Date: 26 August 2025
 

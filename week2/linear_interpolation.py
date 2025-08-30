@@ -12,6 +12,7 @@ position_55 = 23029
 
 # 55 is 45 minutes after 10 minutes, and 10 minutes is the starting point. Use 55-10 for x values.
 slope = (position_55 - position_10) / (55-10)
+
 # 25 - 10 because 25 minutes is 15 minutes after 10 minutes, which is change in x.
 position_25 = slope * (25-10) + position_10
 position_300 = slope * (300-10) + position_10

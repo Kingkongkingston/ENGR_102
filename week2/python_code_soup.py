@@ -19,8 +19,15 @@ z = 0
 y = 10
 z += y
 z += y
-z += y
-z -= x
+x += 1
+x += 1
+x += 1
+x += 1
+x += 1
+x += 1
+x += 1
+x += 1
+z += x
 print(z)
 
 # Calculations for 102

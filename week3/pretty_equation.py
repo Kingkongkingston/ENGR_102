@@ -19,11 +19,11 @@ equation = "The quadratic equation is "
 
 if A != 0:
     if A == 1:
-        equation += "x²"
+        equation += "x^2"
     elif A == -1:
-        equation += "- x²"
+        equation += "- x^2"
     else:
-        equation += f"{A}x²"
+        equation += f"{A}x^2"
 
 if B != 0:
     if B > 0:

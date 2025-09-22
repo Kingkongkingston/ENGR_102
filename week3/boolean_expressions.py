@@ -10,7 +10,7 @@
 # Assignment:   4.18 Lab - Boolean Expressions
 # Date:         19/09/2025
 
-########## Part A ############
+############ Part A ############
 a_input = input("Enter True or False for a: ").upper()
 b_input = input("Enter True or False for b: ").upper()
 c_input = input("Enter True or False for c: ").upper()
@@ -19,11 +19,11 @@ a = a_input in ['T', 'TRUE']
 b = b_input in ['T', 'TRUE']
 c = c_input in ['T', 'TRUE']
 
-########## Part B ############
+############ Part B ############
 print(f"a and b and c: {a and b and c}")
 print(f"a or b or c: {a or b or c}")
 
-########## Part C ############
+############ Part C ############
 xor = (a and not b) or (not a and b)
 print(f"XOR: {xor}")
 
@@ -31,7 +31,7 @@ odd_count = (a and not b and not c) or (not a and b and not c) or (
     not a and not b and c) or (a and b and c)
 print(f"Odd number: {odd_count}")
 
-########## Part D ############
+############ Part D ############
 # Complex expression 1
 complex1 = (not (a and not b) or (not c and b)) and (
     not b) or (not a and b and not c) or (a and not b)

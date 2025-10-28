@@ -14,6 +14,11 @@
 # SECTION 5: Main Function
 # Assigned to: Team Member 5 (or integrator)
 # --------------------------------------------
+
+# --------------------------------------------
+# SECTION 5: Main Function
+# --------------------------------------------
+
 def main():
     """
     Main driver function:
@@ -23,9 +28,13 @@ def main():
     4. Display final ASCII art time
     """
     time_str, clock_type, preferred_char = get_user_input()
-    if clock_type == 12:
-        converted_time, suffix = convert_to_12hr_format(time_str, clock_type)
-    else:
-        converted_time, suffix = time_str, ""
+    converted_time, suffix = convert_to_12hr_format(time_str, clock_type)
     ascii_dict = create_ascii_digits(preferred_char)
     display_ascii_time(converted_time, ascii_dict, suffix)
+
+
+# --------------------------------------------
+# SECTION 6: Program Execution Guard
+# --------------------------------------------
+if __name__ == "__main__":
+    main()

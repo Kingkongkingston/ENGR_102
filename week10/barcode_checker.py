@@ -7,31 +7,29 @@
 # Assignment:   11.15 Lab: Barcode Checker
 # Date:         18 Nov 2025
 
-def is_valid(barcode):
-    digits = [int(d) for d in barcode]
+filename = input("Enter the name of the file: ")
+
+
+def is_valid(code):
+    digits = [int(d) for d in code]
 
     first_group = digits[0:12:2]
     second_group = digits[1:12:2]
 
-    s1 = sum(first_group)
-    s2 = sum(second_group) * 3
-
-    total = s1 + s2
+    total = sum(first_group) + 3 * sum(second_group)
     check_digit = (10 - (total % 10)) % 10
 
     return check_digit == digits[-1]
 
 
-valid = []
+valid_count = 0
 
-with open("barcodes.txt", "r") as f:
+with open(filename, "r") as f:
     for line in f:
         code = line.strip()
         if len(code) == 13 and code.isdigit() and is_valid(code):
-            valid.append(code)
+            with open("valid_barcodes.txt", "a") as out:
+                out.write(code + "\n")
+            valid_count += 1
 
-with open("valid_barcodes.txt", "w") as out:
-    for v in valid:
-        out.write(v + "\n")
-
-print(f"There are {len(valid)} valid barcodes")
+print(f"There are {valid_count} valid barcodes")

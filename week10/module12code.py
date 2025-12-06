@@ -1,4 +1,4 @@
-## the assignment before the rat 
+# the assignment before the rat
 
 import numpy as np
 
@@ -6,10 +6,10 @@ import numpy as np
 with open("module12quizF25.txt", "r") as file:
     numbers = [int(line.strip()) for line in file]
 
-#Reshape into 100x100 matrix
+# Reshape into 100x100 matrix
 matrix = np.array(numbers).reshape(100, 100)
 
-#Calculate the key values
+# Calculate the key values
 # Average of the numbers in the 6th row (index 5)
 val1 = int(round(np.mean(matrix[5])))
 
@@ -51,8 +51,12 @@ for c in plaintext:
     if c not in seen:
         ciphertext += c
 
+print(ciphertext)
+ciphertext = "magicdefhjklnopqrstuvwxyzb"
+
 # Decipher the message
-message = "zpvtplwcihu"
+# Insert hidden message here depending on question
+message = "fhiicofpxiz"
 deciphered = ""
 for c in message:
     index = ciphertext.index(c)

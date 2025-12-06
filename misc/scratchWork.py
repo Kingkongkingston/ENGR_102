@@ -1,8 +1,7 @@
-age = {}
+def dosomething(a):
+    a = [1, 5, 8]
 
-age["Alice"] = 30
-age["Bob"] = 25
-age[21] = "twenty-one"
 
-for key in age:
-    print(age[key], end=", ")
+x = [3, 7, 9]
+dosomething(x)
+print(x[2])
